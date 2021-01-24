@@ -1,6 +1,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>alt.hazycora.com</title>
   <style>
       a:link {
@@ -26,17 +27,33 @@
       .image {
         height: 60px;
       }
-      #footer {
-        position: fixed;
-        font-size: 10px;
-        width: 100%;
-        margin: 0px;
-        bottom: 0px;
-        padding: 2px;
-        background-color: black;
-        color: white;
-        font-family: Tahoma;
-        padding-left: 10px;
+      @media (min-width:600px) {
+        #footer {
+          position: fixed;
+          font-size: 10px;
+          width: 100%;
+          margin: 0px;
+          bottom: 0px;
+          padding: 2px;
+          background-color: black;
+          color: white;
+          font-family: Tahoma;
+          padding-left: 10px;
+        }
+      }
+      @media (max-width:600px) {
+        #footer {
+          position: fixed;
+          font-size: 15px;
+          width: 100%;
+          margin: 0px;
+          bottom: 0px;
+          padding: 2px;
+          background-color: black;
+          color: white;
+          font-family: Tahoma;
+          padding-left: 10px;
+        }
       }
       #content {
         margin: 6px;
@@ -153,7 +170,7 @@
         height: 60px;
       }
       #cat3 {
-        animation: cat2;
+        animation: cat3;
         position: fixed;
         animation-iteration-count: infinite;
         height: 60px;
@@ -172,7 +189,7 @@
       <img src="logo2.png" id="logo">
   </a>
   <div id="content">
-    <p id="top">Welcome to <font color="#6c6799">The Fun Zone</font></p>
+    <p id="top">Welcome to <span style="color:#6c6799;">The Fun Zone</span></p>
     <div class="container">
       <img src="shit.png" class="image">
       <p>I make shit sometimes, <a href="https://hazycora.com/a"><i>and the shit is available here.</i></a></p>
