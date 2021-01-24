@@ -1,0 +1,197 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>alt.hazycora.com</title>
+  <style>
+      a:link {
+        color: lightgrey;
+      }
+      body {
+        background-color: #302d48;
+        margin: 0px;
+      }
+      @keyframes logo {
+        0% {top: 10px;}
+        50% {top: 0px;}
+        100% {top: 10px;}
+      }
+      #logo {
+        position: fixed;
+        left: 10px;
+        width: 350px;
+        animation: logo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .image {
+        height: 60px;
+      }
+      #footer {
+        position: fixed;
+        font-size: 10px;
+        width: 100%;
+        margin: 0px;
+        bottom: 0px;
+        padding: 2px;
+        background-color: black;
+        color: white;
+        font-family: Tahoma;
+        padding-left: 10px;
+      }
+      #content {
+        margin: 6px;
+        margin-top: 80px;
+        padding: 10px;
+        background-color: #0c0c14;
+        color: white;
+        font-family: Tahoma;
+        padding-left: 10px;
+        height: auto;
+        padding-bottom: 16px;
+        border-radius: 6px;
+        overflow: hidden;
+        /*border: 4px solid #000000;*/
+      }
+      #content #top {
+        font-size: 20px;
+        margin-bottom: 6px;
+      }
+      .container {
+        float: left;
+        display: block;
+        width: auto;
+        height: 100px;
+        padding: 2px;
+        margin-right: 20px;
+      }
+      p {
+        margin: 0px;
+      }
+      @keyframes cat1 {
+        0% {
+          transform: rotate(0deg);
+          left: 5%;
+          top: 40%;
+        }
+        25% {
+          left: 90%;
+          top: 60%;
+        }
+        50% {
+          left: 55%;
+          top: 20%;
+        }
+        75% {
+          left: 75%;
+          top: 90%;
+        }
+        100% {
+          transform: rotate(360deg);
+          left: 5%;
+          top: 40%;
+        }
+      }
+      @keyframes cat2 {
+        0% {
+          transform: rotate(0deg);
+          left: 12%;
+          top: 40%;
+        }
+        25% {
+          left: 60%;
+          top: 30%;
+        }
+        50% {
+          left: 55%;
+          top: 70%;
+        }
+        75% {
+          left: 75%;
+          top: 50%;
+        }
+        100% {
+          transform: rotate(360deg);
+          left: 12%;
+          top: 40%;
+        }
+      }
+      @keyframes cat3 {
+        0% {
+          transform: rotate(0deg);
+          left: 90%;
+          top: 40%;
+        }
+        25% {
+          left: 30%;
+          top: 30%;
+        }
+        50% {
+          left: 55%;
+          top: 60%;
+        }
+        75% {
+          left: 75%;
+          top: 80%;
+        }
+        100% {
+          transform: rotate(360deg);
+          left: 90%;
+          top: 40%;
+        }
+      }
+      #cat1 {
+        animation: cat1;
+        position: fixed;
+        animation-iteration-count: infinite;
+        height: 60px;
+      }
+      #cat2 {
+        animation: cat2;
+        position: fixed;
+        animation-iteration-count: infinite;
+        height: 60px;
+      }
+      #cat3 {
+        animation: cat2;
+        position: fixed;
+        animation-iteration-count: infinite;
+        height: 60px;
+      }
+  </style>
+  <script>
+    function catClick(number) {
+      console.log('wtf why did you do that thats so mean')
+      document.getElementById('cat'+number).src='cathurt.png'
+      setTimeout(function() {document.getElementById('cat'+number).src='cat.png'}, 1000)
+    }
+  </script>
+</head>
+<body>
+  <a href="https://hazycora.com">
+      <img src="logo2.png" id="logo">
+  </a>
+  <div id="content">
+    <p id="top">Welcome to <font color="#6c6799">The Fun Zone</font></p>
+    <div class="container">
+      <img src="shit.png" class="image">
+      <p>I make shit sometimes, <a href="https://hazycora.com/a"><i>and the shit is available here.</i></a></p>
+    </div>
+    <div id="container">
+      <img src="contact.png" class="image">
+      <p>You can reach me on <a href="https://twitter.com/hazycora">the Twitters</a> and on email <a href="mailto:hazycora@gmail.com">hazycora@gmail.com</a> <i>yass</i></p>
+    </div>
+  </div>
+  <a onclick="catClick(1)">
+    <img src="cat.png" id="cat1" style="animation-duration: 2s;">
+  </a>
+  <a onclick="catClick(2)">
+    <img src="cat.png" id="cat2" style="animation-duration: 4.1s;">
+  </a>
+  <a onclick="catClick(3)">
+    <img src="cat.png" id="cat3" style="animation-duration: 6.3s;">
+  </a>
+  <div id="footer">
+    <p>Site (c) hazycora x3</p>
+  </div>
+</body>
+</html>
